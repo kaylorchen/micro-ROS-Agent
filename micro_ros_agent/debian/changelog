@@ -1,0 +1,73 @@
+ros-humble-micro-ros-agent (3.0.6-0jammy) jammy; urgency=high
+
+  * Fix thread include (backport #216 <https://github.com/micro-ROS/micro-ROS-Agent/issues/216>) (#217 <https://github.com/micro-ROS/micro-ROS-Agent/issues/217>)
+
+ -- Pablo Garrido <pablogarrido@eprosima.com>  Sun, 28 Jan 2024 16:00:00 -0000
+
+ros-humble-micro-ros-agent (3.0.5-0jammy) jammy; urgency=high
+
+
+
+ -- Pablo Garrido <pablogarrido@eprosima.com>  Mon, 05 Jun 2023 16:00:00 -0000
+
+ros-humble-micro-ros-agent (3.0.4-0jammy) jammy; urgency=high
+
+  * Fix Datawriter destruction (#169 <https://github.com/micro-ROS/micro-ROS-Agent/issues/169>)
+  * Synchronise predicate (#160 <https://github.com/micro-ROS/micro-ROS-Agent/issues/160>)
+
+ -- Pablo Garrido <pablogarrido@eprosima.com>  Tue, 27 Sep 2022 16:00:00 -0000
+
+ros-humble-micro-ros-agent (3.0.3-0jammy) jammy; urgency=high
+
+  * Fix memory leak in graph manager (#147 <https://github.com/micro-ROS/micro-ROS-Agent/issues/147>)
+
+ -- Pablo Garrido <pablogarrido@eprosima.com>  Sun, 12 Jun 2022 16:00:00 -0000
+
+ros-humble-micro-ros-agent (3.0.2-0jammy) jammy; urgency=high
+
+
+
+ -- Pablo Garrido <pablogarrido@eprosima.com>  Tue, 24 May 2022 16:00:00 -0000
+
+ros-humble-micro-ros-agent (3.0.1-0jammy) jammy; urgency=high
+
+  * Add services to graph manager (#127 <https://github.com/micro-ROS/micro-ROS-Agent/issues/127>) (#129 <https://github.com/micro-ROS/micro-ROS-Agent/issues/129>)
+  * Add used missing includes (#116 <https://github.com/micro-ROS/micro-ROS-Agent/issues/116>) (#124 <https://github.com/micro-ROS/micro-ROS-Agent/issues/124>)
+  * Add system logger flag (#118 <https://github.com/micro-ROS/micro-ROS-Agent/issues/118>) (#119 <https://github.com/micro-ROS/micro-ROS-Agent/issues/119>)
+  * Add condition variable include (#113 <https://github.com/micro-ROS/micro-ROS-Agent/issues/113>) (#114 <https://github.com/micro-ROS/micro-ROS-Agent/issues/114>)
+  * pass system name to xrceagent (#110 <https://github.com/micro-ROS/micro-ROS-Agent/issues/110>) (#112 <https://github.com/micro-ROS/micro-ROS-Agent/issues/112>)
+  * Fix memory leak in FastDDS datawriter (#107 <https://github.com/micro-ROS/micro-ROS-Agent/issues/107>) (#109 <https://github.com/micro-ROS/micro-ROS-Agent/issues/109>)
+
+ -- Pablo Garrido <pablogarrido@eprosima.com>  Thu, 24 Mar 2022 16:00:00 -0000
+
+ros-humble-micro-ros-agent (3.0.0-0jammy) jammy; urgency=high
+
+
+
+ -- Pablo Garrido <pablogarrido@eprosima.com>  Sun, 12 Sep 2021 16:00:00 -0000
+
+ros-humble-micro-ros-agent (1.0.1-0jammy) jammy; urgency=high
+
+  * Remove XRCE dependency and add superbuild (#97 <https://github.com/micro-ROS/micro-ROS-Agent/issues/97>)
+  * Fixed launch file by using a list for arguments. Ensures order of items is kept. (#93 <https://github.com/micro-ROS/micro-ROS-Agent/issues/93>) (#94 <https://github.com/micro-ROS/micro-ROS-Agent/issues/94>)
+  * Modify argument type (#91 <https://github.com/micro-ROS/micro-ROS-Agent/issues/91>)
+  * Fix graph manager datawriters behaviour (#84 <https://github.com/micro-ROS/micro-ROS-Agent/issues/84>)
+  * Graph manager: Fix participant mask for listener callbacks (#81 <https://github.com/micro-ROS/micro-ROS-Agent/issues/81>)
+  * Fix agent launch (#78 <https://github.com/micro-ROS/micro-ROS-Agent/issues/78>)
+  * Fix graph manager node namespaces (#75 <https://github.com/micro-ROS/micro-ROS-Agent/issues/75>)
+  * Fix Rolling agent (#61 <https://github.com/micro-ROS/micro-ROS-Agent/issues/61>)
+  * Add multi domain graph manager (#69 <https://github.com/micro-ROS/micro-ROS-Agent/issues/69>)
+  * Add ros2 launch capabilities and example launch file (#47 <https://github.com/micro-ROS/micro-ROS-Agent/issues/47>)
+  * Snap build for the micro-ROS-Agent (#43 <https://github.com/micro-ROS/micro-ROS-Agent/issues/43>)
+  * Create graph manager after checking passed CLI arguments and launch xrce-dds server (#41 <https://github.com/micro-ROS/micro-ROS-Agent/issues/41>)
+  * Contributors: Antonio Cuadros, Jose Antonio Moral, Pablo Garrido, mergify[bot]
+
+ -- Pablo Garrido <pablogarrido@eprosima.com>  Sun, 12 Sep 2021 16:00:00 -0000
+
+ros-humble-micro-ros-agent (0.0.1-0jammy) jammy; urgency=high
+
+  * Initial release
+
+ -- Pablo Garrido <pablogarrido@eprosima.com>  Tue, 23 Apr 2019 16:00:00 -0000
+
+

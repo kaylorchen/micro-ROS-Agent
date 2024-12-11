@@ -18,13 +18,16 @@ unset(_deps)
 
 enable_language(C)
 enable_language(CXX)
+#set(CMAKE_INSTALL_PREFIX ./debian/ros-humble-micro-ros-agent/${CMAKE_INSTALL_PREFIX})
+message(STATUS "install dir = ${CMAKE_INSTALL_PREFIX}")
+message(WARNING "UAGENT_USE_SYSTEM_LOGGER = ${UAGENT_USE_SYSTEM_LOGGER}")
 
 unset(xrceagent_DIR CACHE)
 find_package(xrceagent 2 EXACT QUIET)
 if(NOT xrceagent_FOUND)
     ExternalProject_Add(xrceagent
             GIT_REPOSITORY
-                https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
+              http://shenzhen.kaylordut.com:13000/microros/Micro-XRCE-DDS-Agent.git 
             GIT_TAG
                 v2.4.2
             PREFIX

@@ -1,0 +1,12 @@
+Source: ros-humble-micro-ros-agent
+Section: misc
+Priority: optional
+Maintainer: Pablo Garrido <pablogarrido@eprosima.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ament-cmake-gtest <!nocheck>, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-builtin-interfaces <!nocheck>, ros-humble-micro-ros-msgs, ros-humble-rcutils, ros-humble-rmw, ros-humble-rmw-dds-common, ros-humble-rmw-fastrtps-shared-cpp, ros-humble-rosidl-default-generators <!nocheck>, ros-humble-rosidl-typesupport-fastrtps-cpp <!nocheck>
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-micro-ros-agent
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-micro-ros-msgs, ros-humble-rcutils, ros-humble-rmw, ros-humble-rmw-dds-common, ros-humble-rmw-fastrtps-shared-cpp
+Description: micro-ROS Agent package
