@@ -1,0 +1,24 @@
+include:
+  - project: amr/pipeline
+    ref: "master"
+    file: "packaging-deb.yml"
+    inputs:
+      arch: "amd64"
+      dist: "jammy"
+      prepare: ".gitlab-ci/prepare.sh"
+  
+  - project: amr/pipeline
+    ref: "master"
+    file: "packaging-deb.yml"
+    inputs:
+      arch: "arm64"
+      dist: "jammy"
+      prepare: ".gitlab-ci/prepare.sh"
+
+  - project: amr/pipeline
+    ref: "master"
+    file: "distribute.yml"
+
+stages:
+  - packaging
+  - distribute

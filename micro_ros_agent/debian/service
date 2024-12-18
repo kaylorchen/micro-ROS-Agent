@@ -1,0 +1,11 @@
+[Unit]
+Description="bringup ros-humble-micro-ros-agent"
+After=network.target
+
+[Service]
+ExecStart=/opt/ros/humble/bin/ros2 launch micro_ros_agent micro_ros_agent_launch.py 
+Restart=always
+RestartSec=1s
+
+[Install]
+WantedBy=multi-user.target
