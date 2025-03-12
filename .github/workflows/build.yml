@@ -1,0 +1,39 @@
+name: build microros pacakges
+
+# 触发工作流的事件
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - release
+  pull_request:
+    branches:
+      - release
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        runs-on: [ubuntu-22.04, ubuntu-22.04-arm]
+    runs-on: ${{ matrix.runs-on }}
+    container:
+      image: ros:humble-ros-base # 指定自定义 Docker 镜像
+      options: --privileged
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1000
+        fetch-tags: true
+
+    - name: Run build script
+      run: |
+        bash build.sh
+
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ matrix.runs-on }}-artifacts
+        path: artifacts
